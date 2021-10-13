@@ -34,6 +34,6 @@ public class Teglalap extends Sikidom {
 
     @Override
     public String toString() {
-        return String.format("Teglalap{ a = %f ; b = %f ; %s }", a , b, super.toString());
+        return String.format("Teglalap{ a = %f ; b = %f ; %s }", a, b, super.toString());
     }
 }
