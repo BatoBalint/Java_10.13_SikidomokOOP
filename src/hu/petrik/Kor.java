@@ -10,8 +10,7 @@ public class Kor extends Sikidom {
     }
 
     public Kor() {
-        this.r = rnd.nextDouble() * 10;
-
+        this.r = veletlen();
     }
 
     public Kor(int r) {

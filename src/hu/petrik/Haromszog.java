@@ -24,6 +24,6 @@ public class Haromszog extends Sikidom {
 
     @Override
     public String toString() {
-        return String.format("a = %f ; b = %f ; c = %f");
+        return String.format("a = %f ; b = %f ; c = %f; $s", this.a, this.b, this.c, super.toString());
     }
 }

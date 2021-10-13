@@ -6,7 +6,10 @@ public abstract class Sikidom {
 
     protected abstract double keruletSzamit();
     protected abstract double teruletSzamit();
-    protected final static Random rnd = new Random();
+    private final static Random RANDOM = new Random();
+    protected final double veletlen() {
+        return RANDOM.nextDouble() * 10 + 1;
+    }
 
     @Override
     public String toString() {
