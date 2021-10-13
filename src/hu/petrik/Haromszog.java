@@ -5,6 +5,17 @@ public class Haromszog extends Sikidom {
     private double b;
     private double c;
 
+    public Haromszog() {
+        boolean szerkesztheto = false;
+        double a, b, c;
+        while (!szerkesztheto) {
+            this.a = veletlen();
+            this.b = veletlen();
+            this.c = veletlen();
+            szerkesztheto = this.a >= this.b + this.c && this.b >= this.a + this.c && this.c >= this.a + this.b;
+        }
+    }
+
     public Haromszog(double a, double b, double c) {
         this.a = a;
         this.b = b;
@@ -19,7 +30,8 @@ public class Haromszog extends Sikidom {
 
     @Override
     protected double teruletSzamit() {
-        return 0;
+        double p = keruletSzamit() / 2;
+        return Math.sqrt(p * (p - a) * (p - b) * (p - c));
     }
 
     @Override
